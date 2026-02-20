@@ -20,15 +20,15 @@
     <h2 id="result"></h2>
 
     <script>
-        function calculateBMI() {
+        function calculatebmi() {
             var weight = document.getElementById("weight").value;
             var height = document.getElementById("height").value;
              if (weight == "" || height == "") {
                 document.getElementById("result").innerHTML = "กรุณากรอกข้อมูลให้ครบ";
                 return;
              }
-             var heightInMeter = height / 100;
-             var bmi = weight / (heightInMeter * heightInMeter);
+             var heightmeter = height / 100;
+             var bmi = weight / (heightmeter * heightmeter);
              var status = "";
              if (bmi < 18.5) {
                 status = "ผอม เพิ่มการกินให้เยอะๆหน่อยนะ :) ";
